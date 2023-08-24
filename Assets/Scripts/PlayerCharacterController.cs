@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -29,6 +28,16 @@ public class PlayerCharacterController : MonoBehaviour {
         PlayerActions.Enable();
         PlayerActions.Move.started += Move_started;
         PlayerActions.Move.canceled += Move_canceled;
+        PlayerActions.Interact.started += InteractStarted;
+    }
+
+    private void InteractStarted(InputAction.CallbackContext obj) {
+        Collider2D[] hits = Physics2D.OverlapPointAll(transform.position);
+        for (int i = 0; i < hits.Length; i++)
+            if (hits[i].TryGetComponent(out IInteractable interactable)) {
+                interactable.Interact();
+                break;
+            }
     }
 
     private void Move_started(InputAction.CallbackContext obj) {
@@ -45,6 +54,7 @@ public class PlayerCharacterController : MonoBehaviour {
     private void OnDestroy() {
         PlayerActions.Move.started -= Move_started;
         PlayerActions.Move.canceled -= Move_canceled;
+        PlayerActions.Interact.started -= InteractStarted;
         PlayerActions.Disable();
     }
 
