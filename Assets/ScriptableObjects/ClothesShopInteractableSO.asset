@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: ClothesShopInteractableSO
   m_EditorClassIdentifier: 
   <ItemSOs>k__BackingField:
-  - {fileID: 11400000, guid: 49d27bbc4f8c0b044b3a0a5f3e8fffb8, type: 2}
+  - {fileID: 11400000, guid: 78b6c52206c1e024380af9b2915304d6, type: 2}
+  - {fileID: 11400000, guid: c2a916668d670e6448d6ff6594c17c27, type: 2}
+  - {fileID: 11400000, guid: cc244d4518e788845a2461b20e44d588, type: 2}
+  - {fileID: 11400000, guid: ec6e22700b3e86f4ca0221c6a2cfe3bd, type: 2}
+  - {fileID: 11400000, guid: 9a04c00e22c323144b2ea40d51f84422, type: 2}

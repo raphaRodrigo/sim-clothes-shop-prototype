@@ -62,5 +62,12 @@ public class PlayerCharacterController : MonoBehaviour {
         Velocity = (Vector3)PlayerActions.Move.ReadValue<Vector2>();
         animator.SetFloat(moveXHash, Velocity.x);
         animator.SetFloat(moveYHash, Velocity.y);
+
+        Vector2 position = Camera.main.WorldToViewportPoint(transform.position);
+        
+        transform.position = (Vector2)Camera.main.ViewportToWorldPoint(new(
+            Mathf.Clamp(position.x, .01f, .99f),
+            Mathf.Clamp(position.y, 0, .9f)
+        ));
     }
 }

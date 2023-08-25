@@ -70,5 +70,9 @@ public class LayeredRenderer : MonoBehaviour {
     public void SetTexture(Texture2D spriteSetTexture) {
         _spriteSetTexture = spriteSetTexture;
         spriteRenderer.sprite = null;
+        currentSpriteIndex = Array.FindIndex(
+                baseRenderer.spriteSets[baseRenderer._spriteSetTexture], i => i == baseRenderer.spriteRenderer.sprite
+            );
+        OnBaseSpriteChanged(currentSpriteIndex);
     }
 }

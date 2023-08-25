@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6200003939810985318}
   - component: {fileID: 431824467185263149}
   - component: {fileID: 8863552087250310321}
-  - component: {fileID: 7204251803657943135}
+  - component: {fileID: 1200349924141573518}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -70,7 +70,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7204251803657943135
+--- !u!114 &1200349924141573518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd907184fc1bac646971a0e9ec6bf72f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryItemsParent: {fileID: 0}
   <InventorySO>k__BackingField: {fileID: 11400000, guid: f015f819baac25e4287f12546c6ae77a, type: 2}
 --- !u!1 &3128156332666439100
 GameObject:

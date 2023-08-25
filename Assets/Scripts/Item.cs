@@ -16,18 +16,18 @@ public class Item : MonoBehaviour {
 
 
     private void SetUpButtonListener() {
-        if (_shopSO.Contains(_itemSO))
+        if (!_shopSO)
+            button.onClick.AddListener(() => _itemSO.PerformAction(playerGameObject));
+        else if (_shopSO.Contains(_itemSO))
             button.onClick.AddListener(BuyItem);
         else if (_inventorySO.Contains(_itemSO))
             button.onClick.AddListener(SellItem);
-        else if (!_shopSO)
-            button.onClick.AddListener(() => _itemSO.PerformAction(gameObject));
     }
 
     private void OnDestroy() {
         button.onClick.RemoveListener(BuyItem);
         button.onClick.RemoveListener(SellItem);
-        button.onClick.RemoveListener(() => _itemSO.PerformAction(gameObject));
+        button.onClick.RemoveListener(() => _itemSO.PerformAction(playerGameObject));
     }
 
     public void Initialize(ItemSO itemSO, ShopInteractableSO shopInteractable, GameObject gameObject) {
@@ -49,6 +49,7 @@ public class Item : MonoBehaviour {
     }
 
     public void SellItem() {
+        _itemSO.ClearAction(playerGameObject);
         _shopSO.AddItem(_itemSO);
         _inventorySO.RemoveItem(_itemSO);
         _shopSO.Interact(playerGameObject);
