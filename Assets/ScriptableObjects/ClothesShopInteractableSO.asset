@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4730f1af7c9bbc94eb570dd3b0455078, type: 3}
   m_Name: ClothesShopInteractableSO
   m_EditorClassIdentifier: 
+  <ItemSOs>k__BackingField:
+  - {fileID: 11400000, guid: 49d27bbc4f8c0b044b3a0a5f3e8fffb8, type: 2}

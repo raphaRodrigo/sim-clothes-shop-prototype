@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c0564b39b5e8d4ca158cd4f606c1fc, type: 3}
+  m_Name: BoxerOutfitItemSO
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Boxer
+  <Icon>k__BackingField: {fileID: 21300000, guid: 13c3278a84b8da347b59e6a35a6800a1, type: 3}
+  <Price>k__BackingField: 0
+  modifiers:
+  - <playerModifier>k__BackingField: {fileID: 11400000, guid: 7b8a9e024ef14e146886833658770e0e, type: 2}
+    <value>k__BackingField: {fileID: 2800000, guid: f113c8a18bbc13a4eb3dce9141164f05, type: 3}

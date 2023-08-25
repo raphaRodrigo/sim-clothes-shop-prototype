@@ -2,5 +2,5 @@
 
 public abstract class InteractableSO : ScriptableObject, IInteractable {
 
-    public abstract void Interact();
+    public abstract void Interact(GameObject gameObject);
 }

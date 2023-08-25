@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6200003939810985318}
   - component: {fileID: 431824467185263149}
   - component: {fileID: 8863552087250310321}
+  - component: {fileID: 7204251803657943135}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -69,6 +70,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7204251803657943135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255226885691044763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd907184fc1bac646971a0e9ec6bf72f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <InventorySO>k__BackingField: {fileID: 11400000, guid: f015f819baac25e4287f12546c6ae77a, type: 2}
 --- !u!1 &3128156332666439100
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,6 +95,7 @@ GameObject:
   - component: {fileID: 7190147919877223727}
   - component: {fileID: 7540303803529771632}
   - component: {fileID: 4065375778758178395}
+  - component: {fileID: 3213807240036842279}
   m_Layer: 0
   m_Name: BaseRenderer
   m_TagString: Untagged
@@ -194,6 +209,22 @@ MonoBehaviour:
   culledBy: {fileID: 0}
   _spriteSetTexture: {fileID: 2800000, guid: e9039a7495889644da69af707d7b439d, type: 3}
   spriteSetTexturesPath: Sprites/Characters/Player/Base
+--- !u!114 &3213807240036842279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128156332666439100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c83ed07aacff150429f8cae9ed7d2c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <BaseRenderer>k__BackingField: {fileID: 4065375778758178395}
+  <OutfitRenderer>k__BackingField: {fileID: 3326652705119872280}
+  <HairRenderer>k__BackingField: {fileID: 1480955891611877649}
+  <HatRenderer>k__BackingField: {fileID: 1140142113521030551}
 --- !u!1 &3177085239588755937
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,5 +526,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseRenderer: {fileID: 4065375778758178395}
   culledBy: {fileID: 1140142113521030551}
-  _spriteSetTexture: {fileID: 0}
+  _spriteSetTexture: {fileID: 2800000, guid: 93b8fa1f73f52704395deb5e515b4e04, type: 3}
   spriteSetTexturesPath: Sprites/Characters/Player/4har

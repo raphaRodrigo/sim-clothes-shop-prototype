@@ -5,7 +5,7 @@ public class InteractableTrigger : MonoBehaviour, IInteractable {
 
     [SerializeField] private InteractableSO interactableSO;
 
-    public void Interact() {
-        interactableSO.Interact();
+    public void Interact(GameObject gameObject) {
+        interactableSO.Interact(gameObject);
     }
 }

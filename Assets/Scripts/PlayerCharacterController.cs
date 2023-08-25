@@ -35,7 +35,7 @@ public class PlayerCharacterController : MonoBehaviour {
         Collider2D[] hits = Physics2D.OverlapPointAll(transform.position);
         for (int i = 0; i < hits.Length; i++)
             if (hits[i].TryGetComponent(out IInteractable interactable)) {
-                interactable.Interact();
+                interactable.Interact(gameObject);
                 break;
             }
     }
