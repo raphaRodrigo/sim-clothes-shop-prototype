@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99af8ac1e4d40bb40904dda5b5b9efb4, type: 3}
   m_Name: InventorySO
   m_EditorClassIdentifier: 
-  <ItemSOs>k__BackingField: []
+  <ItemSOs>k__BackingField:
+  - {fileID: 11400000, guid: cc244d4518e788845a2461b20e44d588, type: 2}
+  - {fileID: 11400000, guid: 49d27bbc4f8c0b044b3a0a5f3e8fffb8, type: 2}
